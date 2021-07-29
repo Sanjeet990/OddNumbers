@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <EditText
+                android:id="@+id/range1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your first range"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/range2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your second range"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btnProceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proceed" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:padding="28dp" />
+
+                <LinearLayout
+                    android:id="@+id/resultContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="24dp"
+                        android:gravity="center"
+                        android:text="Results"
+                        android:textSize="24dp" />
+
+                    <LinearLayout
+                        android:id="@+id/numContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="The Count of odd numbers is: "
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textSize="40dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sumContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="The sum of odd numbers is: "
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/sum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textSize="40dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</layout>
